@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecniSeeds - Home</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/logo.jpg" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo"><img src="./assets/images/logo.jpg" alt=""></a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo"><img src="./assets/images/logo.jpg" alt=""></a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>Manifesto</a>
+            </li>
+
+            <li>
+              <a href="#services" class="navbar-link" data-nav-link>Past Achievements</a>
+            </li>
+
+            <li>
+              <a href="#features" class="navbar-link" data-nav-link>Features</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>Get involve</a>
+            </li>
+
+            <!-- <li>
+              <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+            </li> -->
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="btn-outline">Support</a>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle has-before">I AM AYODEJI REX ABITOGUN, FNCS.</p>
+
+              <h1 class="h1 hero-title"><span>#Vote</span> For The Best Candidate</h1>
+
+              <p class="hero-text">
+                We offer consulatancy and training services in all areas for teenagers to reach the right career through the synergy of human and artificial intelligence.
+              </p>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-primary">Discover More</a>
+              </div>
+            </div>
+
+            <figure
+              class="hero-banner has-before img-holder"
+              style="--width: 650; --height: 650"
+            >
+              <img
+                src="./assets/images/hero.jpeg"
+                width="650"
+                height="650"
+                alt="hero banner"
+                class="img-cover"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.png"
+                width="802"
+                height="654"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="about-content">
+              <h2 class="h2-sm section-title">
+               Vision & Mission
+              </h2>
+
+              <p class="section-text">
+                To Be A Globally Respected Brand Providing
+                Continual And Quality Seeds / Agro-inputs
+                To Framers / Clientele.
+              </p>
+
+              <ul class="about-list">
+                <li class="has-before">
+                  To provide quality, improved seeds
+                </li>
+
+                <li class="has-before">
+                  To be the farmers number one choice in seeds
+                </li>
+
+                <li class="has-before">To build an orgarnization of dedicated Employees of seeds in the seed / agro-input indusatry</li>
+                <li class="has-before">To create an enabling environment where staff can build a carrer in agriculture for research and business</li>
+                <li class="has-before">To help youths and women grow in the agriculture section</li>  
+              </ul>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-primary">Know More</a>
+
+                <!-- <button class="flex-btn">
+                  <div class="btn-icon">
+                    <ion-icon
+                      name="medal-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <span class="span">10+ Years Experience</span>
+                </button> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <!-- <section class="section service" id="services" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle text-center">-What We Offer-</p>
+
+            <h2 class="h2 section-title text-center">Our Services</h2>
+
+            <p class="section-text text-center">
+              Get the most of reduction in your farm operating costs for the
+              whole product.
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/Consultation (2).png"
+                      width="140"
+                      height="140"
+                      loading="lazy"
+                      alt="UI/UX Creative Design"
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">CONSULATION AND TRAINING</h3>
+
+                    <p class="card-text">
+                      We offer consulatancy and training services in all areas of the sector. With over 10 years of expereince, we have vast knowledge and expereince in all the value chains of crops produced in Nigeia. Our previous clients includes individuals, students, NGOs, private companies, govenment organizations etc.
+                    </p>
+
+                    <a href="#" class="btn-link">
+                      <span class="span">Read More</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/research.png"
+                      width="140"
+                      height="140"
+                      loading="lazy"
+                      alt="App Development"
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">RESEARCH AND DEVELOPMENT</h3>
+
+                    <p class="card-text">
+                      We are commited to breeding and developement of new crop varieties of excellent qaulities and can withstand environmental biotic and abiotic stress.
+                    </p>
+
+                    <a href="#" class="btn-link">
+                      <span class="span">Read More</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/service.png"
+                      width="140"
+                      height="140"
+                      loading="lazy"
+                      alt="Professional Content Writer"
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">EXTENTION SERVICES</h3>
+
+                    <p class="card-text">
+                      We embark on new innovation and technological dissemination for farmers to help improve thier crop yeilds, thereby increasing income. Our activities also helps to stengthen the resilence of the farmers to challenges like climate, pest and diseases attack that may pose a threat to crops.
+                    </p>
+
+                    <a href="#" class="btn-link">
+                      <span class="span">Read More</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/agriculture.png"
+                      width="140"
+                      height="140"
+                      loading="lazy"
+                      alt="Graphic Design"
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">AGRIC BUSINESS</h3>
+
+                    <p class="card-text">
+                      We are active in all areas of the agriculture value chain we carry out investigations in both the grains and seed value chain, bringing in high standards of quality starting from production down to the distribution to the final consumer.
+                    </p>
+
+                    <a href="#" class="btn-link">
+                      <span class="span">Read More</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
+        </section> -->
+
+        <!-- 
+        - #FEATURES
+      -->
+
+        <section class="section features" id="features" aria-label="features">
+          <div class="container">
+            <p class="section-subtitle text-center">-Why Choose Us-</p>
+
+            <h2 class="h2 section-title text-center">Reasons to Choose Us</h2>
+
+            <!-- <p class="section-text text-center">
+              Get the most of reduction in your team’s operating costs for the
+              whole product which creates amazing UI/UX experiences.
+            </p> -->
+
+            <ul class="grid-list">
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="01">01</data>
+
+                  <h3 class="h3 card-title">Pricing</h3>
+
+                  <p class="card-text">
+                    Our prices are competitive and fair.There are no unexpected or additional expenses. That’s how we would like to be treated, and that is how our clients are treated.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="02">02</data>
+
+                  <h3 class="h3 card-title">Our Reliable Quality</h3>
+
+                  <p class="card-text">
+                    Quality isn’t just a buzz word at Company, It’s WHAT WE DO and WHAT WE BELIEVE. We strive to supply the highest quality seed available else it won’t matter how hard you work to prepare your farm, you simply won’t be successful.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="03">03</data>
+
+                  <h3 class="h3 card-title">Value for Products</h3>
+
+                  <p class="card-text">
+                    We offer farmers a wide range of Agricultural services which reduces production cost giving them a perfect harvest season .
+                  </p>
+                </div>
+              </li>
+
+           
+            </ul>
+          </div>
+        </section>
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2022 TecniSeeds | All Rights Reserved by
+            <a href="#" class="copyright-link">Onaivio.jsx</a>
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
