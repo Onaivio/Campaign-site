@@ -565,7 +565,7 @@ body {
   #FEATURES
 \*-----------------------------------*/
 
-.features .section-text { margin-block: 15px 50px; }
+.features .section-text { margin-block: 15px 50px; font-size: var(--fs-12); }
 
 .features-card {
   position: relative;
