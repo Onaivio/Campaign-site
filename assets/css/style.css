@@ -61,7 +61,7 @@
    * spacing
    */
 
-  --section-padding: 80px;
+  --section-padding: 50px;
 
   /**
    * shadow
@@ -164,7 +164,7 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.container { padding-inline: 10px; }
 
 .section { padding-block: var(--section-padding); }
 
@@ -381,7 +381,7 @@ body {
 .hero {
   background-color: var(--mint-cream);
   /* background-image: url(../images/hero-right-bg.png); */
-  padding-block-start: calc(var(--section-padding) + 50px);
+  padding-block-start: calc(var(--section-padding) + 30px);
   text-align: center;
   overflow: hidden;
 }
@@ -460,12 +460,12 @@ body {
 
 .about .container {
   display: grid;
-  gap: 30px;
+  gap: 10px;
 }
 
 .about-banner { filter: drop-shadow(2px 2px 5px hsla(0, 0%, 0%, 0.08)); }
 
-.about .section-text { margin-block: 20px 13px; }
+.about .section-text { margin-block: 15px 10px;  font-size: var(--fs-12); }
 
 .about-list { margin-block-end: 50px; }
 
@@ -511,16 +511,25 @@ body {
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
+.service{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.service .section-text { margin-block: 15px 5px; }
 
-.service .section-text { margin-block: 15px 50px; }
-
-.service .grid-list { margin-block-end: 50px; }
+.service .grid-list { margin-block-end: 40px; }
 
 .service-card {
   height: 100%;
   padding: 30px 25px;
   text-align: center;
   box-shadow: var(--shadow-1);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card::after {
@@ -544,7 +553,7 @@ body {
 
 .service-card:is(:hover, :focus-within) .img { transform: scale(1.1); }
 
-.service-card .card-text { margin-block: 5px 13px; }
+.service-card .card-text { margin-block: 5px 13px; font-size: var(--fs-12); }
 
 .service .btn { margin-inline: auto; }
 
