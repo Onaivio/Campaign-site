@@ -844,7 +844,14 @@ body {
 
   }
 
-
+  .has-scrollbar {
+    gap: 25px;
+    margin-inline: -25px;
+    padding-inline: 25px;
+    scroll-padding-left: 25px;
+  }
+  
+  .has-scrollbar > li { min-width: calc(50% - 12.5px); }
 
   /**
    * REUSED STYLE
@@ -906,6 +913,7 @@ body {
 
   }
 
+  .has-scrollbar > li { min-width: calc(60% - 12.5px); }
 
 
   /**
@@ -984,6 +992,9 @@ body {
     display: flex;
     gap: 40px;
   }
+
+  .has-scrollbar > li { min-width: calc(50% - 12.5px); }
+
 
   .navbar-link {
     color: var(--rich-black-fogra-29-1);
@@ -1109,6 +1120,8 @@ body {
     --fs-4: 3.8rem;
 
   }
+  .has-scrollbar > li { min-width: calc(36.33% - 16.66px); }
+
 
 
 
@@ -1189,4 +1202,44 @@ body {
   }
 } */
 
+.has-scrollbar {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  overflow-x: auto;
+  margin-inline: -15px;
+  padding-inline: 15px;
+  scroll-padding-left: 15px;
+  padding-bottom: 60px;
+  scroll-snap-type: inline mandatory;
+}
+
+.has-scrollbar > li {
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+.has-scrollbar {
+  gap: 25px;
+  margin-inline: -25px;
+  padding-inline: 25px;
+  scroll-padding-left: 25px;
+}
+
+.has-scrollbar > li { min-width: calc(40% - 12.5px); }
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: var(--light-gray);
+  outline: 2px solid var(--cultured);
+  border-radius: 10px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--go-green);
+  border: 1px solid var(--cultured);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.has-scrollbar::-webkit-scrollbar-button { width: 15%; }
 
