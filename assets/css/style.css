@@ -1150,7 +1150,7 @@ body {
 
 }
 
-
+/* 
 .grid-item {
   display: flex;
   align-items: center;
@@ -1187,4 +1187,4 @@ body {
   .tall {
     grid-row: span 2;
   }
-}
+} */
