@@ -1243,3 +1243,6 @@ body {
 
 .has-scrollbar::-webkit-scrollbar-button { width: 15%; }
 
+.gallery-list{
+  padding: 2rem;
+}
