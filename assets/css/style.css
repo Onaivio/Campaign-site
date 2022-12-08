@@ -851,7 +851,6 @@ body {
     scroll-padding-left: 25px;
   }
   
-  .has-scrollbar > li { min-width: calc(50% - 12.5px); }
 
   /**
    * REUSED STYLE
@@ -913,7 +912,7 @@ body {
 
   }
 
-  .has-scrollbar > li { min-width: calc(60% - 12.5px); }
+  .has-scrollbar > li { min-width: calc(50% - 12.5px); }
 
 
   /**
@@ -993,7 +992,6 @@ body {
     gap: 40px;
   }
 
-  .has-scrollbar > li { min-width: calc(50% - 12.5px); }
 
 
   .navbar-link {
@@ -1226,23 +1224,31 @@ body {
   scroll-padding-left: 25px;
 }
 
-.has-scrollbar > li { min-width: calc(40% - 12.5px); }
+.has-scrollbar > li { min-width: calc(40% - 11.5px); }
 
 .has-scrollbar::-webkit-scrollbar-track {
   background: var(--light-gray);
-  outline: 2px solid var(--cultured);
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--go-green);
+  background: var(--go-green_50);
   border: 1px solid var(--cultured);
   border-radius: 10px;
   cursor: pointer;
 }
 
+.has-scrollbar::-webkit-scrollbar-thumb:hover { background-color: var(--go-green)}
+
 .has-scrollbar::-webkit-scrollbar-button { width: 15%; }
 
 .gallery-list{
   padding: 2rem;
+}
+
+.gallery-card img {
+  aspect-ratio: 1/1.1;
+  border-top-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  transition: var(--transition-2);
 }
