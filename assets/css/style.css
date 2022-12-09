@@ -1371,7 +1371,7 @@ body {
   position: absolute;
   top: .75rem;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--text-color-light);
   transition: .3s;
 }
